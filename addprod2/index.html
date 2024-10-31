@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="Broa_1_1.ico">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Página inicial</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Cadastrar Produto</a></li>
+                    <li><a href="#">Minha Conta</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <h2>Detalhes do produto</h2>
+            <div class="tabs">
+                <button class="tab active">Detalhes</button>
+                <button class="tab">Preço</button>
+                <button class="tab">Estoque</button>
+            </div>
+
+            <form class="product-form">
+                <div class="form-group">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria">
+                        <option>Categoria escolhida</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nome">Nome do produto</label>
+                    <input type="text" id="nome" placeholder="Nome escolhido">
+                </div>
+
+                <div class="form-group">
+                    <label for="data-validade">Data de validade</label>
+                    <input type="date" id="data-validade" value="2024-10-10">
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descrição do produto</label>
+                    <textarea id="descricao" placeholder="Conte detalhes sobre o produto"></textarea>
+                </div>
+
+                <div class="form-group image-upload">
+                    <label>Imagem do item</label>
+                    <div class="image-placeholder">🖼️</div>
+                    <small>Coloque aqui a imagem do seu produto.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="codigo">Código id do produto</label>
+                    <input type="text" id="codigo" placeholder="Código">
+                </div>
+
+                <button type="submit" class="add-button">Adicionar</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Adicionando produto</div>
+        
+        <!-- Tela de seleção de categoria -->
+        <div class="category-list" id="categoryList">
+            <div class="category-item" onclick="selectCategory('Itens principais')">
+                <span class="icon">🍲</span>
+                <div>
+                    <strong>Itens principais</strong><br>
+                    <small>Comidas, itens de cesta básica</small>
+                </div>
+            </div>
+            <div class="category-item" onclick="selectCategory('Itens gerais')">
+                <span class="icon">🏠</span>
+                <div>
+                    <strong>Itens gerais</strong><br>
+                    <small>Itens gerais pra casa</small>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Tela de detalhes da categoria -->
+        <div class="category-detail" id="categoryDetail" style="display: none;">
+            <label>Modelo</label>
+            <div id="selectedCategory">Itens principais</div>
+            <div class="back-button" onclick="goBack()">Trocar</div>
+            <label>Nome do produto</label>
+            <input type="text" placeholder="Itens de cesta básica: arroz, feijão, café">
+            <button class="add-button" onclick="addCategory()">Adicionar</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>

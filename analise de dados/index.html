@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="7-removebg-preview.png" class="broa">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Página Inicial</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Cadastrar Produto</a></li>
+                    <li><a href="#">Minha Conta</a></li>
+                </ul>
+            </nav>
+            <footer class="sidebar-footer">
+                <p>Broa</p>
+            </footer>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header>
+                <div class="saldo">
+                    <h3>Saldo da Conta</h3>
+                    <div class="saldo-info">
+                        <div class="caixa">
+                            <div id="valor">R$ 100,00</div>
+                            <button id="botao">Mostrar Valor</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Graph Section -->
+            <section class="graphs">
+                <div class="line-chart">
+                    <h4>Classificação Mensal</h4>
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div class="pie-chart">
+                    <h4>Produtos Mais Vendidos no Semestre</h4>
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Footer Info -->
+            <footer class="main-footer">
+                <div class="footer-content">
+                    <h3>Estatísticas de Venda</h3>
+                    <div class="footer-info">
+                        <p>Arroz: 50%</p>
+                        <p>Carne: 25%</p>
+                        <p>Legumes: 12.5%</p>
+                        <p>Outros: 12.5%</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

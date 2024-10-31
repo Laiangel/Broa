@@ -1,0 +1,219 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo do Corpo */
+body {
+    background-color: #eaeff3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Contêiner Principal */
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    min-height: 90vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #F6BF66;
+    color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0; /* Impede que a sidebar encolha */
+}
+
+/* Estilo para a Logo na Sidebar */
+.broa {
+    width: 300%; /* Define a largura como 100% do contêiner pai */
+    max-width: 200px; /* Define um tamanho máximo para evitar que a logo fique muito grande */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Exibe a imagem como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Navegação na Sidebar */
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.sidebar nav ul li a.active,
+.sidebar nav ul li a:hover {
+    background-color:#EA6969; 
+    color:#000;
+}
+
+/* Rodapé da Sidebar */
+.sidebar-footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #000;
+    margin-top: 30px;
+}
+
+/* Estilo do Conteúdo Principal */
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo do Cabeçalho */
+header .saldo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+header .saldo h3 {
+    font-size: 1.2em;
+    color: #000;
+}
+
+/* Informações de Saldo */
+header .saldo-info {
+    display: flex;
+    align-items: center;
+}
+
+.saldo-valor {
+    font-size: 1.5em;
+    color: #2b3a42;
+    margin-right: 10px;
+}
+
+.stars {
+    color: #f4a261;
+    font-size: 1.2em;
+}
+
+/* Estilo dos Gráficos */
+.graphs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Espaço acima dos gráficos */
+    margin-bottom: 30px; /* Espaço abaixo dos gráficos */
+}
+
+.line-chart, .pie-chart {
+    width: 48%; /* Ajuste a largura dos gráficos */
+    margin-top: 20px; /* Adiciona um espaço acima do gráfico, se necessário */
+}
+
+/* Se precisar descer um pouco mais um dos gráficos */
+.line-chart {
+    margin-top: 30px; /* Ajuste este valor conforme necessário para alinhar */
+}
+
+/* Estilo dos Títulos dos Gráficos */
+h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Rodapé Principal */
+.main-footer {
+    margin-top: auto;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-footer h3 {
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-size: 0.9em;
+    margin: 4px 0;
+}
+
+.saldo {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.caixa {
+    border: 2px solid #f4a261; /* Borda com a cor principal */
+    background-color: #fff; /* Fundo branco */
+    padding: 5px; /* Espaco interno */
+    width: 150px; /* Largura */
+    margin:auto; /* Centraliza a caixinha */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeitos de transição */
+    }
+    #valor {
+        display: none; /* Inicia escondido */
+        font-size: 24px; /* Aumenta o tamanho da fonte */
+        color: #2b3a42; /* Cor do texto */
+        margin: 10px 0; /* Margem ao redor do texto */
+        font-weight: bold; /* Texto em negrito */
+    }
+.caixa:hover {
+    transform: translateY(-5px); /* Eleva a caixinha ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Estilo do Botão */
+button {
+    margin-top: 15px; /* Espaçamento acima do botão */
+    padding: 10px 20px; /* Tamanho do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #EA6969; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background-color 0.3s; /* Efeito de transição para o botão */
+}
+button:hover {
+    background-color: #ea6969; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
